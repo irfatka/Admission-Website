@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Donor Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="student_form.js"></script>
+	
+</head>
+<body >
+
+<div class="bgimage"></div>
+<div class="content">
+<div class="head" id="home"> 
+ 	
+ 	<nav>
+ 	<div class="navid">
+ 	<a href=mainpage.html>HOME</a> 
+ 	<a href=#>NEW STUDENT</a>
+ 	<a href=details.php>DETAILS</a>
+ 	<a href=#>ABOUT US</a>
+ 	<a href=#>CONTACT US</a>
+ 	
+ 	
+ 	</div>
+ 	</nav>
+ </div>
+
+<div class="left"></div>
+<br><br><br>
+<h1><center>Student Registration Form</center></h1>
+<div class="center">
+<form name="myForm" method="post" action="student_database.php" onsubmit="return(validateForm());">
+		<span style="color: red">Fields marked * are mandatory to be filled</span><br><br>
+	   <strong>First Name :</strong> <input type="text" name="firstname">&nbsp;<span style="color: red">*</span><br><br>	
+	   <strong>Last Name :</strong> <input type="text" name="lastname">&nbsp;<span style="color: red">*</span><br><br>
+	   <strong>Gender :</strong> <input type="radio" name="gender" value="Male" checked>Male &nbsp;&nbsp;	   	
+	   <input type="radio" name="gender" value="Female">Female &nbsp;<span style="color: red">*</span><br><br>
+	   <strong>Contact 1:</strong> <input type="text" name="contact1">&nbsp;<span style="color: red">*</span><br><br>
+	   <strong>Contact 2:</strong> <input type="text" name="contact2">&nbsp;<br><br>
+	   <strong>SSC Marks:</strong> <input type="text" name="sscmarks">&nbsp;<span style="color: red">*</span><br><br>
+	   <strong>HSC Marks:</strong> <input type="text" name="hscmarks">&nbsp;<span style="color: red">*</span><br><br>
+	   <strong>CET Marks:</strong> <input type="text" name="cetmarks">&nbsp;<span style="color: red">*</span><br><br>
+	   <strong>College:</strong> <select name="college">
+			<option>Pillai College of Engineering</option>
+			<option>SIES</option>
+			<option>DY Patil</option>
+			<option>Bharti Vidyapeeth</option>
+		</select>&nbsp;<span style="color: red">*</span><br><br>
+		<strong>Branch:</strong> <select name="branch">
+			<option>Computer Engineering</option>
+			<option>IT Engineering</option>
+			<option>EXTC</option>
+			<option>Mechanical</option>
+			<option>ETRX</option>
+		</select>&nbsp;<span style="color: red">*</span><br><br>
+
+		<strong>Type :</strong> <input type="radio" name="type" value="General" checked>General &nbsp;&nbsp;	   	
+	   <input type="radio" name="type" value="OBC">OBC &nbsp;&nbsp;
+	   <input type="radio" name="type" value="SC">SC &nbsp;&nbsp;
+	   <input type="radio" name="type" value="ST">ST &nbsp;&nbsp; <span style="color: red">*</span><br><br>
+	&nbsp;&nbsp;&nbsp;<input type="submit" name="Submit" style="border-radius:5px; background-color: red; font-size: 16px; color: white; padding: 10px 30px;">&nbsp;&nbsp;&nbsp;
+	<input type="reset" name="Reset" style="border-radius:5px; background-color: red; font-size: 16px; color: white; padding: 10px 30px;">
+	<br><br>
+
+</form>
+</div>
+
+</div> 
+
+</div>
+</body>
+</html>

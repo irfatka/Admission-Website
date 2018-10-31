@@ -1,0 +1,118 @@
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Georgia, sans-serif;
+    font-size: 16px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav{
+  float: right;
+}
+
+.bgimage{
+  background-image:url(engineering-blueprint.jpg);
+  width: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  filter: blur(3.5px);
+}
+
+.content{
+  z-index: 2;
+}
+
+.head_img{
+  position: fixed;
+  z-index: 2;
+}
+
+.navid{
+  margin-right: 5px;
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-left: 650px;
+  padding-bottom: 10px;
+  background: white ;
+  font-size: 20px;
+  display: block;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.navid a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration-color: white;
+  font-size: 17px;
+}
+
+.navid a:hover {
+  color: red;
+  
+}
+
+.navid a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.left{
+  float: left;
+  width: 20%;
+  margin:auto;
+  display: inline-block;
+}
+
+.center{
+  float: right;
+  width: 65%;
+  margin: auto;
+  display: inline-block;
+}
+
+.right{
+  float: right;
+  width: 20%;
+  margin: auto;
+  display: inline-block;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    height: 50px;
+    text-align: left;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+td{
+  height: 50px;
+  vertical-align: bottom;
+  padding: 15px;
+}
